@@ -348,6 +348,9 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="scoreLabelView" destination="2PC-Nm-2l7" id="Nip-Fa-3BS"/>
+                        <outlet property="treeImageView" destination="JJS-L9-7OE" id="Psv-Jv-6z4"/>
+                        <outlet property="wordLabelView" destination="4ne-bs-UgF" id="ikJ-AL-obg"/>
                         <outletCollection property="letterButtons" destination="3ct-DV-Zbk" collectionClass="NSMutableArray" id="i9e-M0-pvu"/>
                         <outletCollection property="letterButtons" destination="SAE-cx-ItT" collectionClass="NSMutableArray" id="sEC-s4-bvE"/>
                         <outletCollection property="letterButtons" destination="bFB-xw-7fL" collectionClass="NSMutableArray" id="Udu-NS-dET"/>
