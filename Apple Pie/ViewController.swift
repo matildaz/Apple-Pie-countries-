@@ -28,6 +28,35 @@ class ViewController: UIViewController {
     
     //MARK: - Actions
     
+    func buttonIsEnabled() {
+        for item in letterButtons {
+            item.isEnabled = true
+        }
+    }
+    
+    func checkRoundIsEnded() {
+        if currentGame.incorrectMovesRemaining == 0 {
+            numberOfLostGames += 1
+            buttonIsEnabled()
+            newRounnd()
+        } else if currentGame.incorrectMovesRemaining != 0 && currentGame.guessedWord == currentGame.word {
+            numberOfWonGames += 1
+            buttonIsEnabled()
+            newRounnd()
+        }
+    }
+    
+    func lableAddSpace(guessedWord :String) -> String {
+        var newGuessedWord = ""
+        for (i,j) in guessedWord.enumerated() {
+            newGuessedWord += String(j)
+            if i != (guessedWord.count - 1) {
+                newGuessedWord += " "
+            }
+        }
+        return newGuessedWord
+    }
+    
     @IBAction func letterButtonGetPressed(_ sender: UIButton) {
         let letter = sender.title(for: .normal)!
         sender.isEnabled = false
@@ -36,7 +65,7 @@ class ViewController: UIViewController {
     }
     
     func newRounnd() {
-        let newWord : String = listOfWords[Int.random(in: 0...165)]
+        let newWord : String = listOfWords[Int.random(in: 0...listOfWords.count)]
         currentGame = Game(word: newWord, incorrectMovesRemaining: incorrectMovesAllowed)
         updateUI()
     }
@@ -45,7 +74,8 @@ class ViewController: UIViewController {
         let image = "Tree\(currentGame.incorrectMovesRemaining < 0 ? 0 : currentGame.incorrectMovesRemaining < 8 ? currentGame.incorrectMovesRemaining : 7)"
         treeImageView.image = UIImage(named: image)
         scoreLabelView.text = "Победы - \(numberOfWonGames)  Проигрыши - \(numberOfLostGames)"
-        wordLabelView.text = currentGame.guessedWord
+        wordLabelView.text = lableAddSpace(guessedWord:currentGame.guessedWord)
+        checkRoundIsEnded()
     }
     
     override func viewDidLoad() {
