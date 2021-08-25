@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		74B7CE7626D64D480099E30A /* ScreenView-ApplePie@1.png in Resources */ = {isa = PBXBuildFile; fileRef = 74B7CE7226D64D470099E30A /* ScreenView-ApplePie@1.png */; };
+		74B7CE7726D64D480099E30A /* ScreenView-ApplePie@3.png in Resources */ = {isa = PBXBuildFile; fileRef = 74B7CE7326D64D480099E30A /* ScreenView-ApplePie@3.png */; };
+		74B7CE7826D64D480099E30A /* ScreenView-ApplePie@4.png in Resources */ = {isa = PBXBuildFile; fileRef = 74B7CE7426D64D480099E30A /* ScreenView-ApplePie@4.png */; };
+		74B7CE7926D64D480099E30A /* ScreenView-ApplePie@2.png in Resources */ = {isa = PBXBuildFile; fileRef = 74B7CE7526D64D480099E30A /* ScreenView-ApplePie@2.png */; };
 		74DDCF2026D39E0D00DF26B5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DDCF1F26D39E0D00DF26B5 /* AppDelegate.swift */; };
 		74DDCF2226D39E0D00DF26B5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DDCF2126D39E0D00DF26B5 /* SceneDelegate.swift */; };
 		74DDCF2426D39E0D00DF26B5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DDCF2326D39E0D00DF26B5 /* ViewController.swift */; };
@@ -17,6 +21,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		74B7CE7226D64D470099E30A /* ScreenView-ApplePie@1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ScreenView-ApplePie@1.png"; sourceTree = "<group>"; };
+		74B7CE7326D64D480099E30A /* ScreenView-ApplePie@3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ScreenView-ApplePie@3.png"; sourceTree = "<group>"; };
+		74B7CE7426D64D480099E30A /* ScreenView-ApplePie@4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ScreenView-ApplePie@4.png"; sourceTree = "<group>"; };
+		74B7CE7526D64D480099E30A /* ScreenView-ApplePie@2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ScreenView-ApplePie@2.png"; sourceTree = "<group>"; };
 		74DDCF1C26D39E0D00DF26B5 /* Apple Pie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Apple Pie.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		74DDCF1F26D39E0D00DF26B5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		74DDCF2126D39E0D00DF26B5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -39,9 +47,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		74B7CE7126D64D260099E30A /* Screenshots */ = {
+			isa = PBXGroup;
+			children = (
+				74B7CE7226D64D470099E30A /* ScreenView-ApplePie@1.png */,
+				74B7CE7526D64D480099E30A /* ScreenView-ApplePie@2.png */,
+				74B7CE7326D64D480099E30A /* ScreenView-ApplePie@3.png */,
+				74B7CE7426D64D480099E30A /* ScreenView-ApplePie@4.png */,
+			);
+			path = Screenshots;
+			sourceTree = "<group>";
+		};
 		74DDCF1326D39E0D00DF26B5 = {
 			isa = PBXGroup;
 			children = (
+				74B7CE7126D64D260099E30A /* Screenshots */,
 				74DDCF1E26D39E0D00DF26B5 /* Apple Pie */,
 				74DDCF1D26D39E0D00DF26B5 /* Products */,
 			);
@@ -127,7 +147,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74B7CE7926D64D480099E30A /* ScreenView-ApplePie@2.png in Resources */,
 				74DDCF2C26D39E1400DF26B5 /* LaunchScreen.storyboard in Resources */,
+				74B7CE7726D64D480099E30A /* ScreenView-ApplePie@3.png in Resources */,
+				74B7CE7826D64D480099E30A /* ScreenView-ApplePie@4.png in Resources */,
+				74B7CE7626D64D480099E30A /* ScreenView-ApplePie@1.png in Resources */,
 				74DDCF2926D39E1400DF26B5 /* Assets.xcassets in Resources */,
 				74DDCF2726D39E0D00DF26B5 /* Main.storyboard in Resources */,
 			);
